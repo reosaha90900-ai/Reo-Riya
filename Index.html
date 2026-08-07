@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reo ❤️ Riya | Relationship Licence</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif}
+body{
+  min-height:100vh;
+  background:radial-gradient(circle at 20% 10%,#ffdbe7 0,#fff0f5 28%,#f7d6e2 65%,#fff 100%);
+  color:#54152b; overflow-x:hidden;
+}
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.heart{position:absolute;bottom:-50px;animation:rise linear infinite;opacity:.55}
+@keyframes rise{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+.screen{position:relative;z-index:2;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px}
+.card{
+  width:min(470px,100%);background:rgba(255,255,255,.82);backdrop-filter:blur(14px);
+  border:1px solid rgba(255,255,255,.9);border-radius:30px;padding:30px 24px;
+  box-shadow:0 25px 70px rgba(104,19,53,.18);text-align:center
+}
+.logo{width:82px;height:82px;margin:auto;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(145deg,#a5003c,#ef4b7a);color:white;font-size:40px;
+  box-shadow:0 12px 30px rgba(165,0,60,.25)}
+h1{margin:18px 0 4px;font-size:30px;letter-spacing:.5px}
+.subtitle{color:#8a4960;margin-bottom:22px}
+input{
+ width:100%;padding:16px 18px;border-radius:16px;border:2px solid #efc4d3;
+ outline:none;font-size:17px;text-align:center;background:#fff
+}
+input:focus{border-color:#c51f58;box-shadow:0 0 0 4px rgba(197,31,88,.1)}
+button{
+ width:100%;margin-top:13px;padding:15px;border:0;border-radius:16px;
+ background:linear-gradient(135deg,#9d003b,#e83e71);color:#fff;font-size:17px;font-weight:700;
+ box-shadow:0 10px 25px rgba(157,0,59,.22);cursor:pointer
+}
+.error{height:24px;margin-top:10px;color:#c0003f;font-weight:600}
+#site{display:none;position:relative;z-index:1;padding:24px 14px 50px}
+.container{max-width:900px;margin:auto}
+.hero{
+ background:linear-gradient(135deg,rgba(154,0,57,.96),rgba(232,62,113,.94));
+ color:#fff;border-radius:30px;padding:42px 24px;text-align:center;
+ box-shadow:0 25px 70px rgba(104,19,53,.22)
+}
+.badge{display:inline-block;border:1px solid rgba(255,255,255,.5);padding:8px 14px;border-radius:999px;font-size:13px}
+.hero h2{font-size:40px;margin:16px 0 6px}
+.hero p{margin:6px 0;opacity:.92}
+.section{
+ margin-top:18px;background:rgba(255,255,255,.84);border-radius:25px;padding:24px;
+ box-shadow:0 15px 45px rgba(104,19,53,.1)
+}
+.section h3{margin:0 0 18px;color:#9d003b}
+.names{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;text-align:center}
+.name{font-size:25px;font-weight:800}
+.heartbig{font-size:30px}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.box{padding:16px;border-radius:18px;background:#fff1f5;border:1px solid #f4d0dc}
+.label{font-size:12px;color:#9b6578;text-transform:uppercase;font-weight:700}
+.value{font-weight:700;margin-top:5px}
+.counter{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.timebox{text-align:center;background:#fff1f5;border-radius:18px;padding:14px}
+.num{font-size:26px;font-weight:900;color:#a30040}
+.small{font-size:12px;color:#8a596b}
+.route{display:flex;align-items:center;gap:10px}
+.dot{width:14px;height:14px;border-radius:50%;background:#c51f58;flex:none}
+.line{height:4px;flex:1;background:linear-gradient(90deg,#c51f58,#f49ab5);border-radius:10px;position:relative}
+.km{font-size:28px;font-weight:900;color:#a30040;text-align:center;margin:8px}
+.quote{text-align:center;font-size:20px;font-weight:700;line-height:1.6}
+.footer{text-align:center;color:#875469;margin-top:22px;font-size:13px}
+@media(max-width:560px){.hero h2{font-size:32px}.info{grid-template-columns:1fr}.names{grid-template-columns:1fr}.heartbig{order:2}.counter{grid-template-columns:1fr 1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+
+<div class="screen" id="login">
+  <div class="card">
+    <div class="logo">♥</div>
+    <h1>Relationship Licence</h1>
+    <div class="subtitle">Reo ❤️ Riya — Private Love Portal</div>
+    <input id="pass" type="password" placeholder="Enter your secret password" autocomplete="off">
+    <button onclick="unlock()">🔐 Unlock Our Story</button>
+    <div class="error" id="error"></div>
+    <div style="font-size:12px;color:#9b6578;margin-top:8px">Only for Reo & Riya • Lifetime</div>
+  </div>
+</div>
+
+<div id="site">
+<div class="container">
+  <div class="hero">
+    <div class="badge">💗 OFFICIAL LOVE & CARE LICENCE 💗</div>
+    <h2>Reo ❤️ Riya</h2>
+    <p>Made for each other • Since 21 July 2021</p>
+  </div>
+
+  <div class="section">
+    <div class="names">
+      <div class="name">Reo Mondal (Saha)</div><div class="heartbig">❤️</div><div class="name">Riya Das</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>📜 Licence Details</h3>
+    <div class="info">
+      <div class="box"><div class="label">Relationship Status</div><div class="value">In a Committed Relationship ❤️</div></div>
+      <div class="box"><div class="label">Date of Start</div><div class="value">21 July 2021</div></div>
+      <div class="box"><div class="label">Validity</div><div class="value">Lifetime ♾️</div></div>
+      <div class="box"><div class="label">Licence Type</div><div class="value">Love • Respect • Care</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>⏳ Our Journey</h3>
+    <div class="counter">
+      <div class="timebox"><div class="num" id="years">0</div><div class="small">Years</div></div>
+      <div class="timebox"><div class="num" id="months">0</div><div class="small">Months</div></div>
+      <div class="timebox"><div class="num" id="days">0</div><div class="small">Days</div></div>
+    </div>
+    <p style="text-align:center;color:#8a596b;margin-bottom:0">Together since 21 July 2021 💞</p>
+  </div>
+
+  <div class="section">
+    <h3>📍 Two Places, One Story</h3>
+    <div class="info">
+      <div class="box"><div class="label">Reo</div><div class="value">West Bengal<br>Krishnanagar, Ghurni, Nadia<br>Ghurni Beltala Bazar, Aditya Para</div></div>
+      <div class="box"><div class="label">Riya</div><div class="value">West Bengal<br>Howrah, Kona<br>Naskarpara Kalitala</div></div>
+    </div>
+    <div class="km">125 KM</div>
+    <div class="route"><div class="dot"></div><div class="line"></div><div class="dot"></div></div>
+    <div style="display:flex;justify-content:space-between;font-size:12px;color:#8a596b;margin-top:6px"><span>Krishnanagar</span><span>Howrah</span></div>
+  </div>
+
+  <div class="section">
+    <h3>💌 Our Promise</h3>
+    <div class="quote">“ভালোবাসা শুধু কাছে থাকা নয়—দূরত্ব পেরিয়েও একে অপরকে বেছে নেওয়া।” ❤️</div>
+    <ul style="line-height:1.9;color:#714155">
+      <li>আমি তোমাকে ভালোবাসব, সম্মান করব এবং পাশে থাকব।</li>
+      <li>ভালো ও খারাপ—দুই সময়েই একে অপরকে support করব।</li>
+      <li>প্রতিটি সুন্দর মুহূর্তকে মনে রাখব।</li>
+      <li>এই সম্পর্কের licence — Lifetime. ♾️</li>
+    </ul>
+  </div>
+
+  <div class="footer">❤️ Reo & Riya • Relationship Licence • Forever & Always ❤️</div>
+</div>
+</div>
+
+<script>
+const PASSWORD="21july2K21";
+function unlock(){
+  const p=document.getElementById("pass").value;
+  const e=document.getElementById("error");
+  if(p===PASSWORD){
+    document.getElementById("login").style.display="none";
+    document.getElementById("site").style.display="block";
+    window.scrollTo(0,0);
+  }else{
+    e.textContent="❌ Password ভুল হয়েছে — আবার চেষ্টা করো";
+    document.getElementById("pass").value="";
+  }
+}
+document.getElementById("pass").addEventListener("keydown",e=>{if(e.key==="Enter")unlock()});
+
+function updateCounter(){
+  const start=new Date(2021,6,21);
+  const now=new Date();
+  let years=now.getFullYear()-start.getFullYear();
+  let months=now.getMonth()-start.getMonth();
+  let days=now.getDate()-start.getDate();
+  if(days<0){months--; const prev=new Date(now.getFullYear(),now.getMonth(),0); days+=prev.getDate();}
+  if(months<0){years--;months+=12;}
+  document.getElementById("years").textContent=years;
+  document.getElementById("months").textContent=months;
+  document.getElementById("days").textContent=days;
+}
+updateCounter(); setInterval(updateCounter,60000);
+
+for(let i=0;i<24;i++){
+  const h=document.createElement("div");h.className="heart";h.textContent=["❤","♥","💕","💗"][i%4];
+  h.style.left=(Math.random()*100)+"%";h.style.fontSize=(14+Math.random()*22)+"px";
+  h.style.animationDuration=(7+Math.random()*9)+"s";h.style.animationDelay=(-Math.random()*12)+"s";
+  document.getElementById("hearts").appendChild(h);
+}
+</script>
+</body>
+</html>
